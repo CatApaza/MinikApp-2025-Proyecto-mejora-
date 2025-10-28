@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "163752744140",
+    "project_id": "minik-app-bc154",
+    "storage_bucket": "minik-app-bc154.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163752744140:android:4dd3393ec27f4d69781e69",
+        "android_client_info": {
+          "package_name": "com.example.minik_app_tania"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTd0l694vZO5L72geJp5GzBDc_E7K_x_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
