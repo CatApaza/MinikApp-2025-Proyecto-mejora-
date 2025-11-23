@@ -20,16 +20,16 @@ class PdfService {
                 crossAxisAlignment: pw.CrossAxisAlignment.start,
                 children: [
                   pw.Text(
-                    'MiniMarket LibertMarket',
+                    'MiniMarket Liber Market',
                     style: pw.TextStyle(
                       fontSize: 20,
                       fontWeight: pw.FontWeight.bold,
                       color: PdfColors.green800,
                     ),
                   ),
-                  pw.Text('RUC: 20123456789'),
-                  pw.Text('Av. Principal 123 - Arequipa, Perú'),
-                  pw.Text('Teléfono: +51 999 888 777'),
+                  pw.Text('RUC: 10296142838'),
+                  pw.Text('Av. Principal 123 - Madrigal, Perú'),
+                  pw.Text('Teléfono: +51 935 964 167'),
                 ],
               ),
               pw.Container(
