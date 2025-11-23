@@ -1,0 +1,12 @@
+{
+  "name": "mercadopago-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^13.5.0",
+    "mercadopago": "^2.6.5"
+  }
+}

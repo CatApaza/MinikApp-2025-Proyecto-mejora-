@@ -1,0 +1,192 @@
+/* 🎨 Variables de Color */
+:root {
+  --color-primary: #3b82f6; /* Azul vibrante */
+  --color-secondary: #10b981; /* Verde fresco */
+  --color-background: #f0f4f8; /* Fondo suave y claro */
+  --color-card: #ffffff;
+  --color-text-dark: #1f2937;
+  --color-text-medium: #6b7280;
+  --color-shadow-light: rgba(255, 255, 255, 0.7);
+  --color-shadow-dark: rgba(0, 0, 0, 0.1);
+}
+
+/* 🌿 Panel principal - Estilo "Neumorfismo Suave" */
+.panel-section {
+  background: var(--color-background);
+  border-radius: 20px; /* Bordes más redondeados */
+  padding: 30px;
+  margin-bottom: 30px;
+  /* Sombra sutil para un efecto de elevación */
+  box-shadow: 8px 8px 16px var(--color-shadow-dark),
+              -8px -8px 16px var(--color-shadow-light);
+}
+
+/* 🧩 Filtro - Diseño Elevado y Enfocado */
+.filter-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  background: var(--color-card);
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra plana más limpia */
+}
+
+.filter-section label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.filter-section select {
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 1px solid #d1d5db; /* Borde más suave */
+  border-radius: 10px;
+  background: #fff;
+  color: var(--color-text-dark);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-section select:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* Anillo de enfoque azul */
+}
+
+/* 🛍️ Lista de productos - Diseño espacioso */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Tarjetas ligeramente más grandes */
+  gap: 25px;
+  justify-items: center;
+}
+
+/* 📦 Tarjeta - Limpia y de alto contraste */
+.product-card {
+  background: var(--color-card);
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Sombra elegante */
+  width: 100%;
+  max-width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none; /* Si la tarjeta es un enlace */
+  color: inherit;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12); /* Sombra más pronunciada al hacer hover */
+}
+
+/* 🖼️ Imagen */
+.product-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover; /* Cambiado a 'cover' para un look más moderno, aunque 'contain' también es válido */
+  background: #fcfcfc;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* 📝 Info */
+.product-info {
+  padding: 15px;
+  text-align: left; /* Alineación a la izquierda para un look más profesional */
+  flex-grow: 1;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 6px;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: var(--color-secondary); /* Usa el color secundario vibrante */
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.product-stock {
+  font-size: 0.85rem;
+  color: var(--color-text-medium);
+  margin-bottom: 10px;
+}
+
+/* ⚙️ Botones - Estilo de botón moderno y limpio */
+.product-actions {
+  display: flex;
+  gap: 8px; /* Separación entre botones */
+  width: 100%;
+  padding: 0 15px 15px;
+}
+
+.edit-button,
+.delete-button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px; /* Bordes más suaves */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.edit-button {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); /* Sombra de color para profundidad */
+}
+
+.edit-button:hover {
+  background-color: #2563eb; /* Azul un poco más oscuro */
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+}
+
+.delete-button {
+  background-color: #ef4444; /* Rojo estándar */
+  color: white;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.3);
+}
+
+.delete-button:hover {
+  background-color: #dc2626; /* Rojo un poco más oscuro */
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.4);
+}
+.snackbar {
+  position: fixed;
+  top: 20px;          /* Cambiado de bottom a top */
+  right: 20px;
+  background-color: #85c744; /* éxito */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 9999;
+  animation: slideDown 0.3s ease-out; /* animación de arriba hacia abajo */
+}
+
+.snackbar.error {
+  background-color: #e74c3c; /* error */
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
